@@ -4,11 +4,21 @@
 		<meta charset="UTF-8"/> 
 		<meta name=viewport content='width=383'>
 		<link rel="stylesheet" href="bmw.css"></link>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script type="text/javascript" language="JavaScript">
+			function set_body_height()
+			{
+				var wh = $(window).height();
+				$('body').attr('style', 'height:' + wh + 'px;');
+			}
+			$(document).ready(function() {
+				set_body_height();
+				$(window).bind('resize', function() { set_body_height(); });
+			});
+		</script>
 		<title> something stupid </title>
 	</head>
-	
 	<body>
-		<img src="somethingstupid.jpg">
+		<img id="something stupid" class="center fit" src="somethingstupid.jpg">
 	</body>
-	
 </html>
