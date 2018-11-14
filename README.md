@@ -1,5 +1,5 @@
 # PaymonJay.github.io
  Paymon's work in progress personal site.
- [jalali.org]
+ [https://www.jalali.org/]
  - Has a rather minamilist feel
  
